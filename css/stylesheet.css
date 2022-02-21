@@ -19,3 +19,73 @@ h1 {
 a:hover {
   color: white;
 }
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  color: tan;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: tan;
+  left: 600px;
+  z-index: 1;
+}
+.nav-links {
+  text-align: right;
+  width: 80%;
+  height: 40%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.button {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-info {
+  position: absolute;
+  display: none;
+  background-color: lightsteelblue;
+  min-width: 100px;
+  box-shadow: 0.5px 6px 12px 0.5px;
+  z-index: auto;
+  color: steelblue;
+  padding: 10px 12px;
+  display: block;
+}
+.dropdown-info:hover {
+  background-color: tan;
+  display: block;
+}
+.left-column {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  background-color: lightsteelblue;
+}
+.left-column img {
+  width: "200";
+  height: "280";
+  z-index: 1;
+  style="float": left;
+  margin-right: 100px;
+  top: -300px;
+}
+.right-column h2 {
+  position: relative;
+  margin-left: 250px;
+}
+.right-column p {
+  position: relative;
+  margin-left: 200px;
+  left: 50px;
+}
+.right-column iframe {
+  position: relative;
+  margin-left: 300px;
+}
