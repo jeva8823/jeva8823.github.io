@@ -9,7 +9,7 @@ body {
   gap: 10px;
 }
 h1 {
-  color: #C98F79;
+  color: #707070;
   font-family: cursive;
   font-weight: 700;
   font-size: 36px;
@@ -20,7 +20,7 @@ h2 {
   text-decoration: underline;
 }
 h4 {
-  color: #C98F79;
+  color: #707070;
   opacity: 60%;
   font-family: serif;
   line-height: .1;
@@ -33,7 +33,7 @@ p {
 }
 a:link {
   text-decoration: none;
-  color: #707070;
+  color: #C98E76;
   background-color: inherit;
 }
 a:visited {
@@ -90,31 +90,25 @@ a:hover {
   display: block;
 }
 .dropdown-content a:hover {
-  background-color: lightsteelblue;
+  background-color: #FFB5D2;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown:hover .dropbtn {
-  background-color: lightsteelblue;
+  background-color: #866152;
 }
 @@media screen and (max-width: 400px){ /*phone*/
   h1 {
-    font-size: 35px;
+    font-size: 32px;
   }
   h4 {
-    font-size: 24px;
-  }
-  .nav-links {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 12px 14px;
+    font-size: 20px;
   }
   .nav-links a {
     display: grid;
     overflow: hidden;
-    background-color: tan;
+    background-color: #C98E76;
     display: block;
     padding: 14px 16px;
   }
@@ -124,18 +118,26 @@ a:hover {
     line-height: 1.85em;
     margin-bottom: 20px;
     text-align: left;
-    color: steelblue;
+    color: black;
     padding: 5px;
     margin: 20px;
   }
-  ul {
-    font-family: serif;
-    font-size: 20px;
-    line-height: 1.6em;
-    margin-bottom: 15px;
-  }
 }
 @@media screen and (min-width: 401px) { /*computer*/
+  .container {
+    max-width: 1400px;
+    margin: 10;
+  }
+  .nav-links {
+    overflow: hidden;
+    background-color: #C98E76;
+  }
+  .nav-links a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  }
   .header {
     max-width: 1400px none;
     margin: 0 auto;
@@ -145,16 +147,10 @@ a:hover {
     background-color: beige;
   }
   .dropdown {
-
-  }
-  .left-column {
-
-  }
-  .right-column {
-
+    max-width: none;
+    display: flex;
   }
   iframe {
-
+    float: left;
   }
-
 }
