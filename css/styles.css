@@ -1,57 +1,62 @@
 body {
-  background-color: azure;
+  background-color: #C98E76;
 }
-hr {
-  border-style: solid;
-  color: tan;
-  border-width: thin;
-  background-color: inherit;
+.container {
+  display: grid;
+  padding: 5px;
+  grid-template-rows: 1fr;
+  background-color: #FEDCB7;
+  gap: 10px;
 }
 h1 {
-  color: steelblue;
+  color: #C98F79;
   font-family: cursive;
-  opacity: 90%;
   font-weight: 700;
   font-size: 36px;
 }
 h2 {
-  color: tan;
+  color: white;
   font-family: cursive;
   text-decoration: underline;
 }
 h4 {
-  color: lightsteelblue;
+  color: #C98F79;
+  opacity: 60%;
   font-family: serif;
   line-height: .1;
 }
 p {
-  color: steelblue;
+  color: white;
   font-family: serif;
   margin: 10px;
   padding: 10px;
 }
-ul {
-  list-style-type: none;
-}
 a:link {
   text-decoration: none;
-  color: steelblue;
+  color: #707070;
   background-color: inherit;
 }
 a:visited {
   text-decoration: none;
-  color: rosybrown;
+  color: #866152;
   background-color: inherit;
 }
 a:hover {
   text-decoration: underline;
-  color: tan;
+  color: white;
   background-color: inherit;
 }
+.nav-links {
+  display: grid;
+  padding: 5px;
+  grid-template-rows: 1fr;
+  background-color: #FEDCB7;
+  gap: 10px;
+}
 .dropbtn {
-  background-color: rosybrown;
+  background-color: #FEDCB7;
   border: black;
-  color: black;
+  color: #C98E76;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -64,8 +69,8 @@ a:hover {
 }
 .dropbtn:hover {
   text-decoration: underline;
-  color: black;
-  background-color: tan;
+  color: #C98E76;
+  background-color: #866152;
 }
 .dropdown {
   position: relative;
@@ -73,13 +78,13 @@ a:hover {
 }
 .dropdown-content {
   position: absolute;
-  background-color: tan;
+  background-color: #866152;
   display: none;
   min-width: 180px;
   z-index: 1;
 }
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 10px 14px;
   text-decoration: none;
   display: block;
@@ -92,4 +97,64 @@ a:hover {
 }
 .dropdown:hover .dropbtn {
   background-color: lightsteelblue;
+}
+@@media screen and (max-width: 400px){ /*phone*/
+  h1 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .nav-links {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+  }
+  .nav-links a {
+    display: grid;
+    overflow: hidden;
+    background-color: tan;
+    display: block;
+    padding: 14px 16px;
+  }
+  p {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 1.85em;
+    margin-bottom: 20px;
+    text-align: left;
+    color: steelblue;
+    padding: 5px;
+    margin: 20px;
+  }
+  ul {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+  }
+}
+@@media screen and (min-width: 401px) { /*computer*/
+  .header {
+    max-width: 1400px none;
+    margin: 0 auto;
+  }
+  .nav-links {
+    overflow: hidden;
+    background-color: beige;
+  }
+  .dropdown {
+
+  }
+  .left-column {
+
+  }
+  .right-column {
+
+  }
+  iframe {
+
+  }
+
 }
