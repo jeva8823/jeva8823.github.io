@@ -1,0 +1,48 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Assignment 8: Responsive</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+      <h1>Jewels Vang</h1>
+      <h4>My pronouns are she/her.</h4>
+  </div>
+  <hr></hr>
+  <div class="header">
+    <nav>
+      <div class="nav-links">
+          <a href="https://jeva8823.github.io/index.html">Home</a>
+          <a href="https://jeva8823.github.io/assignment-1.html">Assignment 1</a>
+          <a href="https://jeva8823.github.io/assignment3.html">Assignment 3</a>
+          <a href="https://jeva8823.github.io/assignment4.html">Assignment 4</a>
+          <a href="https://jeva8823.github.io/assignment5.html">Assignment 5</a>
+      </div>
+    </nav>
+
+    <div class="dropdown">
+      <button class="dropbtn">Contact Me</button>
+      <div class="dropdown-content">
+        <a href="https://www.linkedin.com/in/jewels-vang-742813199/">LinkedIn</a>
+        <a href="https://boulder.joinhandshake.com/stu/users/4808393">Handshake</a>
+        <a href="jeva8823@colorado.edu">Email</a>
+      </div>
+    </div>
+
+    <div class="left-column">
+      <img src="img/Profile.jpeg" alt="Jewels Vang" width="190" height="265">
+    </div>
+    <div class="right-column">
+      <h2>Introduction</h2>
+      <p>My goals for ATLS 2200 - Web is to understand coding for html.
+        I am a fifth year student planning to graduate CU Boulder May 2022. I major in Strategic Communication in Public Relations,
+        and I minor in Business and Creative Technology and Design. I am a Colorado native, but looking to move away from the snow in the future.
+        I am a huge Marvel fan and I cannot wait to see Doctor Strange 2. Watch the video below to preview the trailer!</p>
+      <iframe width="320" height="215"
+        src="https://www.youtube.com/embed/aWzlQ2N6qqg">
+      </iframe>
+    </div>
+</body>
+</html>
