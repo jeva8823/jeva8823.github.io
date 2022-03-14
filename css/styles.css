@@ -1,12 +1,8 @@
-/* Home Page */
+/* General */
 body {
   background-color: #C98E76;
+  font-family: "Raleway", sans-serif;
 }
-@font-face {
-  src: url(fonts/Raleway-Clean-One-Bold.otf);
-  font-family: 'Raleway', sans-serif;
-}
-/* END GENERAL */
 
 /* Multi-Purpose */
 .float-right {
