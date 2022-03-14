@@ -46,3 +46,200 @@
     </div>
 </body>
 </html>
+
+body {
+  background-color: #C98E76;
+}
+.container {
+  display: grid;
+  padding: 5px;
+  grid-template-rows: 1fr;
+  background-color: #FEDCB7;
+  gap: 10px;
+}
+h1 {
+  color: #707070;
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 36px;
+}
+h2 {
+  color: white;
+  font-family: cursive;
+  text-decoration: underline;
+}
+h4 {
+  color: #707070;
+  opacity: 60%;
+  font-family: serif;
+  line-height: .1;
+}
+p {
+  color: white;
+  font-family: serif;
+  margin: 10px;
+  padding: 10px;
+}
+a:link {
+  text-decoration: none;
+  color: #C98E76;
+  background-color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: #866152;
+  background-color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: inherit;
+}
+.nav-links {
+  display: grid;
+  padding: 5px;
+  grid-template-rows: 1fr;
+  background-color: #FEDCB7;
+  gap: 10px;
+}
+.dropbtn {
+  background-color: #FEDCB7;
+  border: black;
+  color: #C98E76;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px
+  2px;
+  cursor: pointer;
+  font-family: serif;
+}
+.dropbtn:hover {
+  text-decoration: underline;
+  color: #C98E76;
+  background-color: #866152;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  position: absolute;
+  background-color: #866152;
+  display: none;
+  min-width: 180px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #FFB5D2;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #866152;
+}
+@@media screen and (max-width: 400px){ /*phone*/
+  h1 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .nav-links a {
+    display: grid;
+    overflow: hidden;
+    background-color: #C98E76;
+    display: block;
+    padding: 14px 16px;
+  }
+  p {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 1.85em;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+    padding: 5px;
+    margin: 20px;
+  }
+}
+@@media screen and (min-width: 401px) { /*computer*/
+  .container {
+    max-width: 1400px;
+    margin: 10;
+  }
+  .nav-links {
+    overflow: hidden;
+    background-color: #C98E76;
+  }
+  .nav-links a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  .header {
+    max-width: 1400px none;
+    margin: 0 auto;
+  }
+  .nav-links {
+    overflow: hidden;
+    background-color: beige;
+  }
+  .dropdown {
+    max-width: none;
+    display: flex;
+  }
+  iframe {
+    float: left;
+  }
+}
+<!--<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Home</title>
+      <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-links">
+        <a href="#home" class="nav-bar-name"><b>H O M E</b></a>
+        <div class="float-right">
+            <a href="https://jeva8823.github.io/index.html">Home</a>
+            <a href="https://jeva8823.github.io/about.html">About</a>
+            <a href="https://jeva8823.github.io/projects.html">Projects</a>
+            <a href="https://jeva8823.github.io/content.html">Content</a>
+        </div>
+      </div>
+    </div>
+    <header class="header" style="max-width:7400" id="Home"
+      <img class="background" src="img/background.jpg" alt="Background Header" width="7500" height="4000">
+      <div class="landing-title">
+        <h1 class="h1-landing-title">Jewels Vang</h1>
+      </div>
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">Contact Me</button>
+      <div class="dropdown-content">
+        <a href="https://www.linkedin.com/in/jewels-vang-742813199/">LinkedIn</a>
+        <a href="https://boulder.joinhandshake.com/stu/users/4808393">Handshake</a>
+        <a href="jeva8823@colorado.edu">Email</a>
+      </div>
+    </div>
+      <a class="social-icon" href="https://www.linkedin.com/in/jewels-vang-742813199/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+-->
