@@ -16,7 +16,7 @@ function draw() {
   circle(mouseX, mouseY, 50);
 }
 function setNewImg() {
-    document.getElementById('first-img').src='../img/Resume.pdf';
+    document.getElementById('first-img').src='../img/Resume.png';
 }
 
 function setOldImg() {
