@@ -7,28 +7,18 @@ function buttonClicked() {
 }
 window.onload = windowLoaded;
 
-// Personalized welcome
-
-let myButton = document.querySelector('user');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  if(!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Welcome ' + myName;
-  }
+function setup() {
+  createCanvas(300, 300);
 }
 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Welcome ' + storedName;
+function draw() {
+  background(32);
+  circle(mouseX, mouseY, 50);
+}
+function setNewImg() {
+    document.getElementById('first-img').src='../img/Resume.pdf';
 }
 
-myButton.onclick = function() {
-  setUserName();
+function setOldImg() {
+    document.getElementById('first-img').src='../img/Profile.jpeg';
 }
