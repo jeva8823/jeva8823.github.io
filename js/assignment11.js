@@ -9,7 +9,7 @@ window.onload = windowLoaded;
 
 // Personalized welcome
 
-let myButton = document.querySelector('button');
+let myButton = document.querySelector('user');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
@@ -18,7 +18,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Welcome ' + myName;
+    myHeading.innerHTML = 'Welcome' + myName;
   }
 }
 
@@ -26,7 +26,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Welcome ' + storedName;
+  myHeading.innerHTML = 'Welcome' + storedName;
 }
 
 myButton.onclick = function() {
