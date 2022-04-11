@@ -2,48 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 12</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css" type="text/css">
     <link rel="stylesheet" href="../css/assignment12.css">
     <script defer src="../js/assignment12.js" charset="utf-8"></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="top">
-      <div class="navbar">
-        <a href="#home" class="navbar-item"><b>A S S I G N M E N T  12</b></a>
-        <div class="float-right">
-            <a href="https://jeva8823.github.io/index.html">Home</a>
-            <a href="https://jeva8823.github.io/about.html">About</a>
-            <a href="https://jeva8823.github.io/projects.html">Projects</a>
-            <a href="https://jeva8823.github.io/content.html">Content</a>
-        </div>
-      </div>
-    </div>
     <!-- Assignment 12 -->
     <div class="app">
-      <header>Random Cat Quote Generator</header>
+      <header>Random Quote Generator</header>
       <section class="quotes">
         <div class="quote-text" id="js-quote-text"></div>
       </section>
-    
+      <hr>
       <section class="controls">
         <button type="button" id="js-new-quote" class="new-quote button">
           Generate a new quote
         </button>
+        <div class="twitter-button">
+            <a class="twitter" id="tweet" href="https://twitter.com/intent/tweet?text=Greetings"><i class="fab fa-twitter"></i>Tweet</a>
+        </div>
       </section>
-    </div>
-    <!-- Footer -->
-    <footer class="bottom-footer">
-      <p>
-        <a href="https://www.linkedin.com/in/jewels-vang-742813199/">LinkedIn</a>
-        <a href="https://boulder.joinhandshake.com/stu/users/4808393">Handshake</a>
-        <a href="mailto:jeva8823@colorado.edu">Email</a>
+      <p> I added a Twitter extension for users to tweet the random quote generated.
+        I was able to include the author of the quote. The new API I used is
+        https://official-joke-api.appspot.com/random_joke.
       </p>
-    </footer>
+    </div>
 <!--script src="./week12-demo.js" charset="utf-8"></script> -->
   </body>
 </html>
