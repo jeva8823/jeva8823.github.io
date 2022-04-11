@@ -73,7 +73,7 @@ header {
 }
 
 .new-quote:disabled {
-  background-color: #cccccc;
+  background-color: #C98E76;
   color: #666666;
   cursor: not-allowed;
 }
