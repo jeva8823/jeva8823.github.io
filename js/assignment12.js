@@ -5,7 +5,7 @@
 //const quotebutton = document.querySelector('#js-new-quote');
 // using defer in html will allow script to load and doc to loas and script will run once everything else is done
 // console.log helps with debugging
-const endpoint = 'https://geek-jokes.sameerkumar.website/api?format=json';
+const endpoint = 'https://api.quotable.io/random';
 
 const quoteButton = document.querySelector('#js-new-quote');
 quoteButton.addEventListener('click',getQuote);
