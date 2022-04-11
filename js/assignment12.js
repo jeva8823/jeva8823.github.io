@@ -5,6 +5,11 @@
 //const quotebutton = document.querySelector('#js-new-quote');
 // using defer in html will allow script to load and doc to loas and script will run once everything else is done
 // console.log helps with debugging
+const endpoint = 'https://geek-jokes.sameerkumar.website/api?format=json';
+
+const quoteButton = document.querySelector('#js-new-quote');
+quoteButton.addEventListener('click',getQuote);
+
 async function getQuote() {
   console.log("quote button was clicked");
   try {
@@ -32,8 +37,3 @@ function displayA(auth) {
     const quoteA = document.querySelector('#js-quote-auth');
     quoteA.textContent = "—" + auth;
 }
-
-const endpoint = 'https://api.kanye.rest';
-
-const quoteButton = document.querySelector('#js-new-quote');
-quoteButton.addEventListener('click',getQuote);
