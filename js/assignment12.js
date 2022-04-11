@@ -33,7 +33,7 @@ function displayA(auth) {
     quoteA.textContent = "—" + auth;
 }
 
-const endpoint = 'https://official-joke-api.appspot.com/random_joke';
+const endpoint = 'https://type.fit/api/quotes';
 
 const quoteButton = document.querySelector('#js-new-quote');
 quoteButton.addEventListener('click',getQuote);
