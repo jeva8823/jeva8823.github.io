@@ -8,14 +8,14 @@
 const endpoint = 'https://api.quotable.io/random';
 
 const quoteButton = document.querySelector('#js-new-quote');
-quoteButton.addEventListener('click',getQuote);
+quoteButton.addEventListener('click', getQuote);
 
 async function getQuote() {
   console.log("quote button was clicked");
   try {
     const response = await fetch(endpoint);
     if (!response.ok) {
-      throw Error(response.statusText)
+      throw Error(response.statusText);
     }
     const json = await response.json();
     console.log(json);
