@@ -46,28 +46,86 @@ a:hover {
 }
 
 /* About */
-.profile-image {
-  margin-left: 30px;
+img {
+  margin-left: 50px;
   margin-top: 50px;
+
 }
 .about-h3 {
   font-size: 24px;
   color: white;
+  margin-left: 50px;
 }
 h4 {
   color: white;
   font-size: 18px;
-  margin: 30px;
+  margin: 50px;
 }
 
-/* Navigation Bar */
-.top {
-  position:relative;
+/* NAVBAR & OVERLAY */
+#overlay {
+  background-color:rgba(0,0,0,0.5);
+  cursor:pointer;
+  z-index:2;
+  position:fixed;
+  display:none;
   width:100%;
-  z-index:5;
+  height:100%;
   top:0;
-  padding:inherit;
+  left:0;
+  right:0;
+  bottom:0;
 }
+.sidenav {
+  background-color:#FFFFFF;
+  color:inherit;
+  height:100%;
+  width:0;
+  position:fixed;
+  top:0;
+  right:0;
+  overflow-x:hidden;
+  padding-top:75px;
+  transition: 0.5s;
+  text-align:center;
+  z-index:10;
+}
+.hamburger {
+  color:#C98E76;
+  position:fixed;
+  top:10px!important;
+  right:32px!important;
+  font-size:33px;
+  cursor:pointer;
+  right:0;
+}
+.sidenav a {
+  background-color:inherit;
+  color:#C98E76;
+  font-family:"Raleway", sans-serif;
+  font-weight:400;
+  font-size:13px!important;
+  letter-spacing:0.1em;
+  text-decoration:none!important;
+  padding-left:60px;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-right:24px;
+  display:block;
+  text-align:left;
+}
+.sidenav a:hover {
+  background-color:#FEDCB7;
+  color:#707070;
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* END NAVBAR & OVERLAY */
+/* Navigation Bar */
+
 .navbar {
   width:100%;
   overflow:hidden;
@@ -153,12 +211,15 @@ ul:visited {
   scroll-behavior: auto;
   display: inherit;
   margin-bottom: -10px;
+  text-decoration: none !important;
 }
 p {
-  color: #C98E76;
+  color: black;
+  text-decoration: none !important;
 }
 a:visited {
   color: #866152;
+  text-decoration: none !important;
 }
 
 /* Screen Size */
@@ -206,5 +267,108 @@ a:visited {
   }
   iframe {
     float: left;
+  }
+}
+/* Quote Generator*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #FEDCB7;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+header.quote {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #707070;
+}
+
+.quotes {
+  padding: 20px 50px;
+  min-height: 200px;
+}
+
+.quote-text {
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: black;
+}
+
+#parent {
+    width: 100%;
+    height: 90px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.controls {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.button {
+  display: block;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.new-quote {
+  background-color: #C98E76;
+  margin-bottom: 15px;
+}
+
+.new-quote:hover {
+  background-color: #707070;
+}
+
+.new-quote:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.twitter-button {
+    width: 100%;
+    align-items: center;
+    display: block;
+}
+
+.twitter {
+    background-color: #707070;
+    color: white;
+    text-align: center;
+}
+
+footer {
+  color: #707070;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 100%;
+  }
+  .quote-text {
+    font-size: 18px;
   }
 }

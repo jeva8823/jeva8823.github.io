@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script defer src="js/final.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,26 +14,33 @@
   <div class="top">
     <div class="navbar">
       <a href="#home" class="navbar-item"><b>A B O U T</b></a>
-      <div class="float-right">
-        <a href="https://jeva8823.github.io/index.html">Home</a>
-        <a href="https://jeva8823.github.io/about.html">About</a>
-        <a href="https://jeva8823.github.io/projects.html">Projects</a>
-        <a href="https://jeva8823.github.io/content.html">Content</a>
-      </div>
     </div>
   </div>
-  <div class="about-body">
-    <div class="profile-image">
-      <img src="img/Profile.jpeg" width="190" height="265" alt = "Jewels Vang" align="left"/>
-    </div>
-    <div class="about-h3" align="left">
+  <nav id="sidenavigation" class="sidenav">
+    <a href="https://jeva8823.github.io/index.html">Home</a>
+    <a href="https://jeva8823.github.io/about.html">About</a>
+    <a href="https://jeva8823.github.io/projects.html">Projects</a>
+    <a href="https://jeva8823.github.io/content.html">Content</a>
+    <a href="https://jeva8823.github.io/beinspired.html">Be Inspired</a>
+  </nav>
+  <!-- Sidebar Icon -->
+  <span class="hamburger" id="burger">&#9776;</span>
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <div align="center">
+    <img class= img id="first-img" onmouseover="setNewImg()"
+    onmouseout="setOldImg()" src="./img/Profile.jpeg" alt="Profile" width="370" height="502">
+  </div>
+
+    <div class="about-h3" align="center">
       <h3><strong>Jewels Vang<strong</h3>
-      <div class="about-p" align="left">
+      <div class="about-p" align="center">
         <h4>I am a fifth year student at the University of Colorado Boulder, majoring in Strategic
         Communications - Public Relations, with a minor in Business and a minor in Creative Technology and Design (CTD).
         I love to apply my creativity through my work to enhance an experience given towards an audience. With my journey
         as an undergraduate, it is coming to an end this May 2022, and I am excited
-        to see where my future goes in applying my creativity.</h4>
+        to see where my future goes in applying my creativity. Hover over my profile image to view my resume.</h4>
       </div>
     </div>
   </div>
