@@ -21,9 +21,9 @@ a:hover {
 .image {
   max-width:100%;
   height:inherit;
-} img {
-  vertical-align:middle;
-} a {
+}
+
+a {
   color:inherit;
 }
 .page-content {
@@ -46,9 +46,6 @@ a:hover {
 }
 
 /* About */
-img {
-  margin-left: 50px;
-  margin-top: 50px;
 
 }
 .about-h3 {
@@ -123,8 +120,6 @@ h4 {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-/* END NAVBAR & OVERLAY */
-/* Navigation Bar */
 
 .navbar {
   width:100%;
@@ -203,7 +198,6 @@ ul:visited {
   padding-bottom:16px!important;
   display:block;
   width:auto;
-  position:fixed;
   bottom:0;
   left:0;
   width:100%;
